@@ -1,0 +1,22 @@
+<div class="container card-container">
+    <div class="col">
+      <div class="row" *ngFor="let item of districts">
+        <div class="card" style="width: 15rem">
+          <img
+            src="../../assets/images/Cards/{{ item.img }}"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">Know more about {{ item.name }}</p>
+            <a
+              class="btn btn-outline-warning"
+              (click)="redirectOnClick(item.name)"
+              >VISIT</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

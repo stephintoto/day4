@@ -1,0 +1,63 @@
+<div class="auth-container">
+    <div class="main-mask">
+      <div class="container log-container">
+        <div class="log-containerl"></div>
+        <div class="log-containerr">
+          <h2>Sign Up</h2>
+          <form action="">
+            <div class="form-floating mb-2">
+              <input
+                [(ngModel)]="userName"
+                type="text"
+                class="form-control"
+                name="username"
+                id="username"
+                placeholder="Enter the Username"
+              />
+              <label for="username">Enter the Username</label>
+            </div>
+            <div class="form-floating mb-2">
+              <input
+                [(ngModel)]="userEmail"
+                type="email"
+                class="form-control"
+                name="email"
+                id="email"
+                placeholder="Enter you email"
+              />
+              <label for="email">Enter your Email</label>
+            </div>
+            <div class="form-floating mb-2">
+              <input
+                [(ngModel)]="userPassword"
+                type="password"
+                class="form-control"
+                name="password"
+                id="password"
+                placeholder="Enter your password"
+              />
+              <label for="password">Enter your Password</label>
+            </div>
+            <div class="form-floating mb-2">
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                id="cpassword"
+                placeholder="Confirm Password"
+              />
+              <label for="password">Confirm Password</label>
+            </div>
+            <div class="d-grid gap-2">
+              <input
+                type="submit"
+                class="btn btn-warning"
+                (click)="submitOnClick()"
+              />
+              <a routerLink="/login" class="btn btn-outline-dark">Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

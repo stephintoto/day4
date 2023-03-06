@@ -1,0 +1,19 @@
+.navbar {
+    z-index: 3;
+    position: absolute !important;
+    top: 10px !important;
+    width: 100%;
+  }
+  
+  .sp-nav {  
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  .dis{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
